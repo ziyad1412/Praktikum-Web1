@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+
+<body>
+    <!-- Buat Heading -->
+    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+    <!-- Buat Paragraf -->
+    <p>Our 12"wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.
+    </p>
+    <!-- Buat Garis Pembatas -->
+    <hr>
+
+    <!-- Buat Form -->
+    <form action="succes.html">
+        <!-- Pembungkus Konten -->
+        <fieldset>
+            <legend><b>Data Customer</b></legend>
+            <!-- Buat Table -->
+            <table>
+                <thead>
+                    <!-- Buat 1 baris isi judul -->
+                    <tr>
+                        <!-- 2 Kolom dijadiin 1 -->
+                        <th colspan="2">Your Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Buat 5 Baris isi konten-->
+                    <tr>
+                        <!-- Buat 2 Kolom -->
+                        <td>
+                            <!-- Deskripsi Inputan -->
+                            <label for="name">Name :</label>
+                        </td>
+                        <td>
+                            <!-- Inputan -->
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+
+                    <!-- Buat Address -->
+                    <tr>
+                        <td>
+                            <label for="address">Address :</label>
+                        </td>
+                        <td>
+                            <input type="text" id="address">
+                        </td>
+                    </tr>
+
+                    <!-- Buat No telepon -->
+                    <tr>
+                        <td>
+                            <label for="telephone">Telephone Number :</label>
+                        </td>
+                        <td>
+                            <input type="number" id="telephone">
+                        </td>
+                    </tr>
+
+                    <!-- Buat Email -->
+                    <tr>
+                        <td>
+                            <label for="email">Email :</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email">
+                        </td>
+                    </tr>
+
+                    <!-- Buat Intruksi -->
+                    <tr>
+                        <td>
+                            <label for="description">Delivery Instructions :</label>
+                        </td>
+                        <td>
+                            <textarea id="description"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <!-- Buat List Pemilihan Pizza -->
+        <fieldset>
+            <legend> <b>Design Your Dream Pizza</b> </legend>
+            <h4>Crust (Choose One) :</h4>
+            <!-- Buat List Crust-->
+            <ul style="list-style-type: none ;">
+                <!-- Jenis Classic White -->
+                <li>
+                    <input type="radio" id="white" name="crust">
+                    <label for="white">Classic White</label>
+                </li>
+                <!-- Jenis Multigrain -->
+                <li>
+                    <input type="radio" id="multigrain" name="crust">
+                    <label for="multigrain">Multigrain</label>
+                </li>
+                <!-- Jenis Una Melt -->
+                <li>
+                    <input type="radio" id="cheese" name="crust">
+                    <label for="cheese">Cheese-stuffed crust</label>
+                </li>
+
+                <!-- Jenis Gluten Free -->
+                <li>
+                    <input type="radio" id="gluten" name="crust">
+                    <label for="gluten">Gluten-free</label>
+                </li>
+            </ul>
+
+            <!-- Topping Pizza -->
+            <h4>Toppings (Choose as many as you want):</h4>
+
+            <!-- Buat list topping pizza -->
+            <ul style="list-style-type: none ;">
+                <!-- Buat 7 list  -->
+                <li>
+                    <input type="checkbox" id="red-sauce">
+                    <label for="red-sauce">Red Sauce</label>
+                </li>
+
+                <!-- Buat White Sauce -->
+                <li>
+                    <input type="checkbox" id="white-sauce">
+                    <label for="white-sauce">White Sauce</label>
+                </li>
+                <!-- Buat Mozarella -->
+                <li>
+                    <input type="checkbox" id="mozarella">
+                    <label for="mozarella">Mozarella Cheese</label>
+                </li>
+                <!-- Buat Pepperoni -->
+                <li>
+                    <input type="checkbox" id="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </li>
+                <!-- Buat Mushrom -->
+                <li>
+                    <input type="checkbox" id="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </li>
+                <!-- Buat Peppers -->
+                <li>
+                    <input type="checkbox" id="peppers">
+                    <label for="peppers">Peppers</label>
+                </li>
+                <!-- Buat Anchovies -->
+                <input type="checkbox" id="anchovies">
+                <label for="anchovies">Anchovies</label>
+                <li></li>
+            </ul>
+
+            <!-- Berapa Pizza ? -->
+            <h4>Number</h4>
+
+
+            <label for="count">How many Pizzas :</label>
+            <input type="number" id="count">
+
+            <!-- Baris baru -->
+            <br><br>
+
+            <!-- Contoh tag select -->
+            <label for="delivery">Driver :</label>
+            <select name="delivery" id="delivery">
+                <!-- 3 Delivery -->
+                <option value="grab">Grab</option>
+                <option value="gojek">Gojek</option>
+                <option value="shoope">Shoope</option>
+            </select>
+
+            <br><br>
+
+            <!-- Buat tombol kirim dan reset -->
+            <button type="submit">Bring me a Pizza</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
